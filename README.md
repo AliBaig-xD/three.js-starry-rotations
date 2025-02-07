@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# React + Three.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working with Three.js, allowing you to create 3D graphics and animations in your web applications.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live demo of the project [here](https://threejs-five-sigma.vercel.app/).
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get started with this project, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/AliBaig-xD/three.js-starry-rotations.git
+   cd your-repo
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. **Open your browser:**
+   Navigate to `http://localhost:5173` to see your application in action.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Features
+
+- Integrates Three.js with React for 3D rendering.
+- Supports animations and interactive 3D models.
+- Easy to extend and customize for your specific needs.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
